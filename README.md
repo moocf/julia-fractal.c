@@ -1,28 +1,43 @@
-In this project, we demonstrate how to find the **histogram** of an image, which acts as a graphical representation of the tonal distribution in a digital image, in the **C programming language**.
+This project demonstrates how to render **Julia fractals**—geometrical shapes with intricate, self-similar structures—using the **C programming language** and **OpenMP** for parallelism. The fractal is visualized and displayed in a window using the [tigr.c](https://github.com/erkkah/tigr) graphics library.
 
-You can clone this repository with `git clone <repo url>`. Then, install the required dependencies (here, `tigr.c`) with `npm i` in *command prompt*/terminal. You can use `clang` for compiling the C code, once you install *LLVM* on your system. The script to compile and run the code is `build.sh`. You can run it in the terminal with `bash build.sh`.
+```bash
+# You can clone this repository with:
+$ git clone <repo url>
+
+# Navigate into the project directory:
+$ cd julia-fractal.c
+
+# Then, install the required dependencies (here, `tigr.c`) with:
+$ npm install
+
+# Finally, build and run the project:
+$ bash build.sh
+
+# The build script uses `clang` with OpenMP support to compile the code.
+# The generated executable `a` is then run to display the Julia fractal.
+```
 
 <br>
 
-### Task
+## Task
 
-The code has a **sequential** implementation of *histogram computation*. You are to implement **parallel** histogram computation using OpenMP. Time the speedup achieved by the parallel implementation over the sequential one. Test with large images to see sensible speedups - small workloads do not benefit from parallelism. You can place the image files in the `images/` folder, and pass it as a command line argument while compiling/running the code, as `bash build.sh images/large_image.png`. As *tigr* does not support all PNG formats, you can try converting any image (bmp/png/jpg) to a compatible PNG using online converters, such as [JPG2PNG](https://jpg2png.com/).
+The current code provides a **sequential** implementation of Julia fractal rendering. Your task is to parallelize the rendering using OpenMP. Measure and report the speedup achieved by the parallel implementation compared to the sequential one.
 
 We will use a **leaderboard** to track the best speedups across all submissions.
 
 <br>
 
-### Screenshots
+## Screenshots
 
-![](https://github.com/user-attachments/assets/15c63a1e-275d-48ba-a3e3-8b3bb960f2cd)
+![](https://github.com/user-attachments/assets/7c1093a1-5566-42ef-8a3f-a3e19511457e)
 
-![](https://github.com/user-attachments/assets/9b94bcef-a669-47db-8f35-dd6f52d8d2e0)
+![](https://github.com/user-attachments/assets/66ed165d-f038-4c93-917a-15b9cef8de0f)
 
-![](https://github.com/user-attachments/assets/72e75be7-3c24-46b4-84e6-1ff883f09aad)
+![](https://github.com/user-attachments/assets/6607491c-8f06-4c62-b10d-b161c6e9e5fc)
 
 <br>
 <br>
 
 
 [![ORG](https://img.shields.io/badge/org-moocf-green?logo=Org)](https://moocf.github.io)
-![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/moocf/image-histogram.c)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/moocf/julia-fractal.c)
