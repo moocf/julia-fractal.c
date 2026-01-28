@@ -1,0 +1,30 @@
+{
+  "name": "julia-fractal.c",
+  "version": "0.0.0",
+  "description": "Render Julia fractals, geometrical shapes with arbitrarily detailed structures, in parallel using OpenMP.",
+  "private": true,
+  "keywords": [
+    "c",
+    "fractal",
+    "julia",
+    "openmp",
+    "demo"
+  ],
+  "homepage": "https://github.com/moocf/julia-fractal.c#readme",
+  "bugs": {
+    "url": "https://github.com/moocf/julia-fractal.c/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moocf/julia-fractal.c.git"
+  },
+  "license": "MIT",
+  "author": "wolfram77@gmail.com",
+  "main": "main.c",
+  "scripts": {
+    "test": "exit"
+  },
+  "dependencies": {
+    "tigr.c": "^3.2.6"
+  }
+}
