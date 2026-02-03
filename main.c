@@ -39,6 +39,8 @@ inline int computeIterations(Complex z0, Complex c, int maxIters) {
 }
 
 
+// Render the Julia fractal into the given image.
+// NOTE: This is what you need to parallelize using OpenMP.
 void renderJuliaFractal(Tigr *image, double xmin, double xmax, double ymin, double ymax, Complex c, int maxIters) {
   int W = image->w;
   int H = image->h;
